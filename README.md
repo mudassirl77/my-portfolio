@@ -33,7 +33,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Dark Mode][portfolio-light]][![Light Mode][portfolio-dark]]
+![Dark Mode][portfolio-light]![Light Mode][portfolio-dark]
 
 This is my developer portfolio built using React, Next and TailwindCSS. You can download my resume and view the projects which I have created.
 
