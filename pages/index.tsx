@@ -7,22 +7,14 @@ import {
 } from 'react-icons/ai';
 import Image from 'next/image';
 import muda from '../public/muda3.png';
-import code from '../public/code.png';
 
 import { useState } from 'react';
 import SectionProjects from './components/SectionProjects';
+import SectionTechnologies from './components/SectionTechnologies';
+import SectionProfile from './components/SectionProfile';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(() => !darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  };
 
   return (
     <div className="darkMode ? 'dark' : '">
@@ -33,75 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="from-cyan-400 to-cyan-50 bg-gradient-to-r px-10 md:px-20 lg:px-40 dark:from-slate-700 dark:to-fuchsia-900">
-        <section className="min-h-screen pb-10">
-          <nav className="py-10 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-cyan-50">
-              mudassir lallmahamood
-            </h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => toggleDarkMode()}
-                  className="cursor-pointer text-2xl"
-                />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-slate-500 to-slate-800 text-white px-4 py-2 rounded-md ml-8 dark:from-cyan-100 dark:to-purple-200 dark:text-slate-900"
-                  href="#"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="text-center p-7 py-10 dark:text-cyan-100">
-            <h2 className="text-4xl py-2 text-slate-600 font-medium md:text-6xl dark:text-purple-100">
-              Mudassir Lallmahamood
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-cyan-100">
-              Senior Frontend Engineer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-cyan-100">
-              Pragmatic engineer with a growth mindset. With almost 6 years of
-              professional experience in software development, I deliver quality
-              web applications. The hunger to achieve and learn more keeps me
-              going.
-            </p>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-cyan-100">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillGithub />
-          </div>
-          <div className="relative mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={muda} layout="fill" objectFit="cover" alt={''} />
-          </div>
-        </section>
-        <section className="dark:text-cyan-100">
-          <div>
-            <h3 className="text-3xl py-1">
-              Web technologies I love and master
-            </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-cyan-100">
-              These are the{' '}
-              <span className="text-slate-900-500">technologies</span> I love.
-            </p>
-          </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={code}
-                alt={''}
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">Quality Code</h3>
-              <p>Implementing web applications with quality</p>
-            </div>
-          </div>
-        </section>
+        <SectionProfile darkModeState={{ darkMode, setDarkMode }} />
+        <SectionTechnologies />
         <SectionProjects />
       </main>
     </div>
