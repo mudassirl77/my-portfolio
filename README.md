@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">My Devloper Portfolio</h3>
+<h3 align="center">My Developer Portfolio</h3>
 
   <p align="center">
     My Developer Portfolio built using React, Next and Tailwind. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
