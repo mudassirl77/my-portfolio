@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import {
-  AiFillTwitterCircle,
+  AiFillFacebook,
   AiFillLinkedin,
   AiFillGithub,
 } from 'react-icons/ai';
@@ -57,7 +57,7 @@ function SectionProfile({darkModeState}) {
           </p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-cyan-100">
-          <AiFillTwitterCircle />
+          <AiFillFacebook />
           <AiFillLinkedin />
           <AiFillGithub />
         </div>
