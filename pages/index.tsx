@@ -1,14 +1,5 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-} from 'react-icons/ai';
-import Image from 'next/image';
-import muda from '../public/muda3.png';
-
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 import SectionProjects from './components/SectionProjects';
 import SectionTechnologies from './components/SectionTechnologies';
 import SectionProfile from './components/SectionProfile';
