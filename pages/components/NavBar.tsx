@@ -30,7 +30,7 @@ function NavBar() {
           <li>
             <a
               className="bg-gradient-to-r from-slate-500 to-slate-800 text-white px-4 py-2 rounded-md ml-8 dark:from-cyan-100 dark:to-purple-200 dark:text-slate-900"
-              href="#"
+              href="/mudassirResume.pdf" target="_blank" rel="noreferrer"
             >
               Resume
             </a>
