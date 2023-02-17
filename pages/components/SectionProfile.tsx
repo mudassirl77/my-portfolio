@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Image from 'next/image';
-import muda from '../../public/muda3.png';
+import muda from '../../public/muda4.jpg';
 import MyInfo from './MyInfo';
 import NavBar from './NavBar';
 
